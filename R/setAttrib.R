@@ -18,8 +18,8 @@
 #' attr(vec, name) <- val
 #' ```
 #'
-#' @source [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
-#' @source [src/main/attrib.c](https://github.com/wch/r-source/blob/trunk/src/main/attrib.c)
+#' @source Definition: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
+#' @source Implementation: [src/main/attrib.c](https://github.com/wch/r-source/blob/trunk/src/main/attrib.c)
 #'
 #' @export
 getAttrib <- function(vec, name) {
@@ -32,7 +32,7 @@ getAttrib <- function(vec, name) {
 
 #' @param val ([SEXP]) An \R object.
 #'
-#' @return `setAttrib()` returns ([SEXP]) a copy of \R object `SEXP_vec` with attribute `name` set.
+#' @return `setAttrib()` returns ([SEXP]) a copy of \R object `vec` with attribute `name` set.
 #' @return ([SEXP]) 
 #'
 #' @rdname getAttrib

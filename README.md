@@ -45,9 +45,9 @@ Arguments:
 
 Value:
 
-     (SEXP) Gets the value of attribute ‘name’.
+     getAttrib() returns (SEXP) the value of attribute ‘name’.
 
-     (SEXP) A copy of R object ‘SEXP_vec’ with attribute ‘name’ set.
+     setAttrib() returns (SEXP) a copy of R object ‘vec’ with attribute ‘name’ set.
 
 C API:
 

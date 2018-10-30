@@ -5,9 +5,9 @@
 \alias{setAttrib}
 \title{Gets and Sets an Attribute of an R Object}
 \source{
-\href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
+Definition: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
 
-\href{https://github.com/wch/r-source/blob/trunk/src/main/attrib.c}{src/main/attrib.c}
+Implementation: \href{https://github.com/wch/r-source/blob/trunk/src/main/attrib.c}{src/main/attrib.c}
 }
 \usage{
 getAttrib(vec, name)
@@ -24,7 +24,7 @@ setAttrib(vec, name, val)
 \value{
 \code{getAttrib()} returns (\link{SEXP}) the value of attribute \code{name}.
 
-\code{setAttrib()} returns (\link{SEXP}) a copy of \R object \code{SEXP_vec} with attribute \code{name} set.
+\code{setAttrib()} returns (\link{SEXP}) a copy of \R object \code{vec} with attribute \code{name} set.
 
 (\link{SEXP})
 }
