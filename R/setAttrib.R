@@ -18,7 +18,7 @@
 #' attr(vec, name) <- val
 #' ```
 #'
-#' @source Definition: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
+#' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
 #' @source Implementation: [src/main/attrib.c](https://github.com/wch/r-source/blob/trunk/src/main/attrib.c)
 #'
 #' @export

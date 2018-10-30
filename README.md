@@ -61,9 +61,9 @@ R API:
 
 Source:
 
-     src/include/Rinternals.h
+     Declaration: src/include/Rinternals.h
 
-     src/main/attrib.c
+     Implementation: src/main/attrib.c
 ```
 
 

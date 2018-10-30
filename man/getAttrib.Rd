@@ -5,7 +5,7 @@
 \alias{setAttrib}
 \title{Gets and Sets an Attribute of an R Object}
 \source{
-Definition: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
+Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
 
 Implementation: \href{https://github.com/wch/r-source/blob/trunk/src/main/attrib.c}{src/main/attrib.c}
 }
