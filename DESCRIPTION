@@ -1,7 +1,7 @@
 Package: RNativeAPI
 Version: 0.0.0-9000
 Title: R Native API - Documentation and Examples
-Description: A proof-of-concept package documenting the R Native API via the built-in R help system.  The help pages are written in Roxygen2 that are compiled to Rd format and then rendered by R as regular help pages.
+Description: A proof-of-concept package documenting the R Native API via the built-in R help system.  The help pages are written in Roxygen2 that are compiled to Rd format and then rendered by R as regular help pages. Disclaimer: This is just a proof of concept; I'm not claiming this is the best approach.
 Authors@R: c(
    person("Henrik", "Bengtsson", role=c("aut", "cre", "cph"),
           email = "henrikb@braju.com"))
