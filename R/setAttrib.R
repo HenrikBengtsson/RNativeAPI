@@ -4,7 +4,7 @@
 #'
 #' @param name ([SEXP]) A [character] of length one.
 #'
-#' @return ([SEXP]) Gets the value of attribute `name`.
+#' @return `getAttrib()` returns ([SEXP]) the value of attribute `name`.
 #'
 #' @section C API:
 #' ```c
@@ -32,7 +32,8 @@ getAttrib <- function(vec, name) {
 
 #' @param val ([SEXP]) An \R object.
 #'
-#' @return ([SEXP]) A copy of \R object `SEXP_vec` with attribute `name` set.
+#' @return `setAttrib()` returns ([SEXP]) a copy of \R object `SEXP_vec` with attribute `name` set.
+#' @return ([SEXP]) 
 #'
 #' @rdname getAttrib
 #' @export

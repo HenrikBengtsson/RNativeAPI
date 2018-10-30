@@ -22,9 +22,11 @@ setAttrib(vec, name, val)
 \item{val}{(\link{SEXP}) An \R object.}
 }
 \value{
-(\link{SEXP}) Gets the value of attribute \code{name}.
+\code{getAttrib()} returns (\link{SEXP}) the value of attribute \code{name}.
 
-(\link{SEXP}) A copy of \R object \code{SEXP_vec} with attribute \code{name} set.
+\code{setAttrib()} returns (\link{SEXP}) a copy of \R object \code{SEXP_vec} with attribute \code{name} set.
+
+(\link{SEXP})
 }
 \description{
 Gets and Sets an Attribute of an R Object
