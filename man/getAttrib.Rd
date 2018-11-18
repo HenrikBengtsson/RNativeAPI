@@ -38,7 +38,7 @@ SEXP setAttrib(SEXP vec, SEXP name, SEXP val)
 }
 
 \section{R API}{
-\preformatted{value <- attr(vec, name)
+\preformatted{value <- attr(vec, name, exact = TRUE)
 attr(vec, name) <- val
 }
 }

@@ -14,7 +14,7 @@
 #
 #' @section R API:
 #' ```r
-#' value <- attr(vec, name)
+#' value <- attr(vec, name, exact = TRUE)
 #' attr(vec, name) <- val
 #' ```
 #'
