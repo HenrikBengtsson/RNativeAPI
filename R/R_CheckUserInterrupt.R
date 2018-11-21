@@ -17,7 +17,11 @@
 #
 #' @section R API:
 #'
-#' N/A
+#' All evaluation at the top level of R checks for interrupts.
+#'
+#' Related functions that affects `R_CheckUserInterrupt()`:
+#' * [base::suspendInterrupts()] - suspends interrupts during evaluation
+#' * [base::allowInterrupts()] - allows interrupts during evaluation
 #'
 #' @source Declaration: [src/include/R_ext/Utils.h](https://github.com/wch/r-source/blob/trunk/src/include/R_ext/Utils.h)
 #' @source Implementation: [src/main/errors.c](https://github.com/wch/r-source/blob/trunk/src/main/errors.c)

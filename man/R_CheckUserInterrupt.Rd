@@ -31,6 +31,12 @@ void R_CheckUserInterrupt(void)
 \section{R API}{
 
 
-N/A
+All evaluation at the top level of R checks for interrupts.
+
+Related functions that affects \code{R_CheckUserInterrupt()}:
+\itemize{
+\item \code{\link[base:suspendInterrupts]{base::suspendInterrupts()}} - suspends interrupts during evaluation
+\item \code{\link[base:allowInterrupts]{base::allowInterrupts()}} - allows interrupts during evaluation
+}
 }
 
