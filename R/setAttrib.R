@@ -7,13 +7,18 @@
 #' @return `getAttrib()` returns ([SEXP]) the value of attribute `name`.
 #'
 #' @section C API:
+#'
 #' ```c
+#' #include <Rinternals.h>
+#'
 #' SEXP getAttrib(SEXP vec, SEXP name)
 #' SEXP setAttrib(SEXP vec, SEXP name, SEXP val)
 #' ```
 #
 #' @section R API:
 #' ```r
+#' library(base)
+#'
 #' value <- attr(vec, name, exact = TRUE)
 #' attr(vec, name) <- val
 #' ```

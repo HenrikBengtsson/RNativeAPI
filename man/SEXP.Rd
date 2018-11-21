@@ -11,6 +11,11 @@ SEXP
 \description{
 The \code{SEXP} Structure
 }
+\section{C API}{
+\preformatted{#include <Rinternals.h>
+}
+}
+
 \seealso{
 The \code{SEXP} structure is documented in 'R Language Definition'.
 }
