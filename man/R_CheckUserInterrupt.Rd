@@ -33,7 +33,7 @@ void R_CheckUserInterrupt(void)
 
 All evaluation at the top level of R checks for interrupts.
 
-Related functions that affects \code{R_CheckUserInterrupt()}:
+Related functions that affect \code{R_CheckUserInterrupt()}:
 \itemize{
 \item \code{\link[base:suspendInterrupts]{base::suspendInterrupts()}} - suspends interrupts during evaluation
 \item \code{\link[base:allowInterrupts]{base::allowInterrupts()}} - allows interrupts during evaluation

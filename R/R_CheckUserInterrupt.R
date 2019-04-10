@@ -19,7 +19,7 @@
 #'
 #' All evaluation at the top level of R checks for interrupts.
 #'
-#' Related functions that affects `R_CheckUserInterrupt()`:
+#' Related functions that affect `R_CheckUserInterrupt()`:
 #' * [base::suspendInterrupts()] - suspends interrupts during evaluation
 #' * [base::allowInterrupts()] - allows interrupts during evaluation
 #'
