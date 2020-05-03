@@ -22,10 +22,10 @@ Check if the user has requested an interrupt, and if so branch to
 \R's error signaling functions.
 }
 \section{C API}{
-\preformatted{#include <R_ext/Utils.h>
+\if{html}{\out{<div class="c">}}\preformatted{#include <R_ext/Utils.h>
 
 void R_CheckUserInterrupt(void)
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{R API}{

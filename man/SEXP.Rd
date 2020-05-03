@@ -4,7 +4,9 @@
 \name{SEXP}
 \alias{SEXP}
 \title{The \code{SEXP} Structure}
-\format{A C struct.}
+\format{
+A C struct.
+}
 \usage{
 SEXP
 }
@@ -12,8 +14,8 @@ SEXP
 The \code{SEXP} Structure
 }
 \section{C API}{
-\preformatted{#include <Rinternals.h>
-}
+\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+}\if{html}{\out{</div>}}
 }
 
 \seealso{
