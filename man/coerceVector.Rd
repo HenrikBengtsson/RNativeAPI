@@ -23,10 +23,10 @@ coerceVector(v, type)
 \arguments{
 \item{v}{(\link{SEXP}) An \R object.}
 
-\item{type}{(\link{integer}) An \link{integer} of length one.}
+\item{type}{(\link{SEXPTYPE}) An macro constant of length one.}
 }
 \value{
-\code{coerceVector()} returns (\link{SEXP}) of type \code{type}.
+\code{coerceVector()} returns (\link{SEXP}) of type \link{SEXPTYPE} \code{type}.
 }
 \description{
 Coerces a Vector

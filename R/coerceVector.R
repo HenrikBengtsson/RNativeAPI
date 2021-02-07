@@ -2,9 +2,9 @@
 #'
 #' @param v ([SEXP]) An \R object.
 #'
-#' @param type ([integer]) An [integer] of length one.
+#' @param type ([SEXPTYPE]) An macro constant of length one.
 #'
-#' @return `coerceVector()` returns ([SEXP]) of type `type`.
+#' @return `coerceVector()` returns ([SEXP]) of type [SEXPTYPE] `type`.
 #'
 #' @section C API:
 #'
@@ -51,5 +51,3 @@ coerceVector <- function(v, type) {
   
   return(SEXP)
 }
-
-#' [integer]: [base::integer]
