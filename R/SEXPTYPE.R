@@ -26,7 +26,8 @@
 #' * `ENVSXP`	[environment]
 #'
 #' @seealso
-#' The `SEXPTYPE` is documented in Section 'Details of R types' of 'R Language Definition'.
+#' The `SEXPTYPE` is documented in Section 'Details of R types' in 'R Language Definition'
+#' and Section 'SEXPTYPEs' in 'R Internals'.
 #'
 #' @docType class
 #'

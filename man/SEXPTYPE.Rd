@@ -39,6 +39,7 @@ Common \code{SEXPTYPE}:s an their \R equivalent, if available:
 }
 
 \seealso{
-The \code{SEXPTYPE} is documented in Section 'Details of R types' of 'R Language Definition'.
+The \code{SEXPTYPE} is documented in Section 'Details of R types' in 'R Language Definition'
+and Section 'SEXPTYPEs' in 'R Internals'.
 }
 \keyword{datasets}
