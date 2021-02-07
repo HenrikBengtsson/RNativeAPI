@@ -10,22 +10,22 @@
 #'
 #' ```c
 #' #include <Rinternals.h>
-#'
 #' SEXP Rf_coerceVector(SEXP, SEXPTYPE)
 #' #define coerceVector		Rf_coerceVector
 #' ```
 #'
+#' Related macros:
+#'
 #' ```c
 #' #include <Rdefines.h>
-#'
-#' src/include/Rdefines.h:#define AS_LOGICAL(x)		Rf_coerceVector(x,LGLSXP)
-#' src/include/Rdefines.h:#define AS_INTEGER(x)		Rf_coerceVector(x,INTSXP)
-#' src/include/Rdefines.h:#define AS_NUMERIC(x)		Rf_coerceVector(x,REALSXP)
-#' src/include/Rdefines.h:#define AS_CHARACTER(x)		Rf_coerceVector(x,STRSXP)
-#' src/include/Rdefines.h:#define AS_COMPLEX(x)		Rf_coerceVector(x,CPLXSXP)
-#' src/include/Rdefines.h:#define AS_VECTOR(x)		Rf_coerceVector(x,VECSXP)
-#' src/include/Rdefines.h:#define AS_LIST(x)		Rf_coerceVector(x,VECSXP)
-#' src/include/Rdefines.h:#define AS_RAW(x)		Rf_coerceVector(x,RAWSXP)
+#' #define AS_LOGICAL(x)		Rf_coerceVector(x,LGLSXP)
+#' #define AS_INTEGER(x)		Rf_coerceVector(x,INTSXP)
+#' #define AS_NUMERIC(x)		Rf_coerceVector(x,REALSXP)
+#' #define AS_CHARACTER(x)		Rf_coerceVector(x,STRSXP)
+#' #define AS_COMPLEX(x)		Rf_coerceVector(x,CPLXSXP)
+#' #define AS_VECTOR(x)		Rf_coerceVector(x,VECSXP)
+#' #define AS_LIST(x)		Rf_coerceVector(x,VECSXP)
+#' #define AS_RAW(x)		Rf_coerceVector(x,RAWSXP)
 #' ```
 #'
 #' @section R API:
@@ -39,7 +39,7 @@
 #' y_character <- as.character(x)
 #' ```
 #'
-#' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
+#' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h) and [src/include/Rdefines.h](https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h)
 #' @source Implementation: [src/main/coerce.c](https://github.com/wch/r-source/blob/trunk/src/main/coerce.c)
 #'
 #' @aliases Rf_coerceVector

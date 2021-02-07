@@ -13,7 +13,7 @@
 \alias{AS_RAW}
 \title{Coerces a Vector}
 \source{
-Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
+Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h} and \href{https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h}{src/include/Rdefines.h}
 
 Implementation: \href{https://github.com/wch/r-source/blob/trunk/src/main/coerce.c}{src/main/coerce.c}
 }
@@ -33,19 +33,19 @@ Coerces a Vector
 }
 \section{C API}{
 \if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
-
 SEXP Rf_coerceVector(SEXP, SEXPTYPE)
 #define coerceVector		Rf_coerceVector
-}\if{html}{\out{</div>}}\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.h>
+}\if{html}{\out{</div>}}
 
-src/include/Rdefines.h:#define AS_LOGICAL(x)		Rf_coerceVector(x,LGLSXP)
-src/include/Rdefines.h:#define AS_INTEGER(x)		Rf_coerceVector(x,INTSXP)
-src/include/Rdefines.h:#define AS_NUMERIC(x)		Rf_coerceVector(x,REALSXP)
-src/include/Rdefines.h:#define AS_CHARACTER(x)		Rf_coerceVector(x,STRSXP)
-src/include/Rdefines.h:#define AS_COMPLEX(x)		Rf_coerceVector(x,CPLXSXP)
-src/include/Rdefines.h:#define AS_VECTOR(x)		Rf_coerceVector(x,VECSXP)
-src/include/Rdefines.h:#define AS_LIST(x)		Rf_coerceVector(x,VECSXP)
-src/include/Rdefines.h:#define AS_RAW(x)		Rf_coerceVector(x,RAWSXP)
+Related macros:\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.h>
+#define AS_LOGICAL(x)		Rf_coerceVector(x,LGLSXP)
+#define AS_INTEGER(x)		Rf_coerceVector(x,INTSXP)
+#define AS_NUMERIC(x)		Rf_coerceVector(x,REALSXP)
+#define AS_CHARACTER(x)		Rf_coerceVector(x,STRSXP)
+#define AS_COMPLEX(x)		Rf_coerceVector(x,CPLXSXP)
+#define AS_VECTOR(x)		Rf_coerceVector(x,VECSXP)
+#define AS_LIST(x)		Rf_coerceVector(x,VECSXP)
+#define AS_RAW(x)		Rf_coerceVector(x,RAWSXP)
 }\if{html}{\out{</div>}}
 }
 
