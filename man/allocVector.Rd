@@ -15,7 +15,7 @@
 \source{
 Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h} and \href{https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h}{src/include/Rdefines.h}
 
-Implementation: \verb{Rf_allocVector(SEXPTYPE type, R_xlen_t length)} is a simple inline wrapper functions that calls \code{allocVector3(type, length, NULL)}, cf. \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinlinedfuns.h}{src/include/Rinlinedfuns.h}
+Implementation: \verb{allocVector(SEXPTYPE type, R_xlen_t length)} is a simple inline wrapper functions that calls \code{allocVector3(type, length, NULL)}, cf. \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinlinedfuns.h}{src/include/Rinlinedfuns.h}
 }
 \usage{
 allocVector(type, length)

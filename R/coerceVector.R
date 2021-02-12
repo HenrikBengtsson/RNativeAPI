@@ -4,7 +4,7 @@
 #'
 #' @param type ([SEXPTYPE]) An macro constant of length one.
 #'
-#' @return `coerceVector()` returns ([SEXP]) of type [SEXPTYPE] `type`.
+#' @return `coerceVector()` returns an [SEXP] object of type [SEXPTYPE] `type`.
 #'
 #' @section C API:
 #'

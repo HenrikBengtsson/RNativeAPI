@@ -26,7 +26,7 @@ coerceVector(v, type)
 \item{type}{(\link{SEXPTYPE}) An macro constant of length one.}
 }
 \value{
-\code{coerceVector()} returns (\link{SEXP}) of type \link{SEXPTYPE} \code{type}.
+\code{coerceVector()} returns an \link{SEXP} object of type \link{SEXPTYPE} \code{type}.
 }
 \description{
 Coerces a Vector
