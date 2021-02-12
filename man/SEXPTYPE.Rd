@@ -3,6 +3,30 @@
 \docType{class}
 \name{SEXPTYPE}
 \alias{SEXPTYPE}
+\alias{NILSXP}
+\alias{SYMSXP}
+\alias{LISTSXP}
+\alias{CLOSXP}
+\alias{ENVSXP}
+\alias{PROMSXP}
+\alias{LANGSXP}
+\alias{SPECIALSXP}
+\alias{BUILTINSXP}
+\alias{CHARSXP}
+\alias{LGLSXP}
+\alias{INTSXP}
+\alias{REALSXP}
+\alias{CPLXSXP}
+\alias{STRSXP}
+\alias{DOTSXP}
+\alias{ANYSXP}
+\alias{VECSXP}
+\alias{EXPRSXP}
+\alias{BCODESXP}
+\alias{EXTPTRSXP}
+\alias{WEAKREFSXP}
+\alias{RAWSXP}
+\alias{S4SXP}
 \title{The \code{SEXPTYPE} Structure}
 \format{
 A C struct.
@@ -18,23 +42,33 @@ The \code{SEXPTYPE} Structure
 }\if{html}{\out{</div>}}
 }
 
-\section{Common types}{
+\section{Availalble SEXTYPE types}{
 
-
-Common \code{SEXPTYPE}:s an their \R equivalent, if available:
 \itemize{
-\item \code{REALSXP}	\link{numeric} with storage mode \link{double}
-\item \code{INTSXP}	\link{integer}
-\item \code{CPLXSXP}	\link{complex}
-\item \code{LGLSXP}	\link{logical}
-\item \code{STRSXP}	\link{character}
-\item \code{VECSXP}	list (generic vector)
-\item \code{LISTSXP}	\link{pairlist}
-\item \code{DOTSXP}	a \link{...} object
 \item \code{NILSXP}	\link{NULL}
-\item \code{SYMSXP}	name/symbol
+\item \code{SYMSXP}	name/\link{symbol}
+\item \code{LISTSXP}	\link{pairlist}
 \item \code{CLOSXP}	\link{function} or function closure
 \item \code{ENVSXP}	\link{environment}
+\item \code{PROMSXP}	promises
+\item \code{LANGSXP}	\link{language} objects
+\item \code{SPECIALSXP}	special functions
+\item \code{BUILTINSXP}	builtin functions
+\item \code{CHARSXP}	internal character strings
+\item \code{LGLSXP}	\link{logical} vectors
+\item \code{INTSXP}	\link{integer} vectors
+\item \code{REALSXP}	\link{numeric} vectors (with storage mode \link{double})
+\item \code{CPLXSXP}	\link{complex} vectors
+\item \code{STRSXP}	\link{character} vectors
+\item \code{DOTSXP}	dot-dot-dot (\link{...}) object
+\item \code{ANYSXP}	make "any" args work
+\item \code{VECSXP}	\link{list} (generic vector)
+\item \code{EXPRSXP}	\link{expression} vector
+\item \code{BCODESXP}	byte code
+\item \code{EXTPTRSXP}	external pointer
+\item \code{WEAKREFSXP}	weak reference
+\item \code{RAWSXP}	\link{raw} vector
+\item \code{S4SXP}	S4 classes not of simple type
 }
 }
 
