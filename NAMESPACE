@@ -3,6 +3,7 @@
 export(R_CheckUserInterrupt)
 export(SEXP)
 export(SEXPTYPE)
+export(allocVector)
 export(coerceVector)
 export(getAttrib)
 export(setAttrib)
