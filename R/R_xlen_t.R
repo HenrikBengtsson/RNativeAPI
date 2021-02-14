@@ -2,8 +2,8 @@
 #'
 #' @usage
 #' #include <Rinternals.h>
-#' R_len_t
 #' R_xlen_t
+#' R_len_t
 #'
 #' @section C API:
 #' Long vectors:
@@ -13,17 +13,23 @@
 #' define R_XLEN_T_MAX 4503599627370496
 #' ```
 #'
-#' If long vectors are not supported on the current platform, then:
-#'
-#' ```
-#' typedef int R_xlen_t;
-#' define R_XLEN_T_MAX R_LEN_T_MAX
-#' ```
-#'
 #' Short vectors:
 #' ```c
 #' typedef int R_len_t;
 #' #define R_LEN_T_MAX INT_MAX
+#' ```
+#'
+#' If long vectors are _not_ supported on the current platform, then:
+#'
+#' ```c
+#' LONG_VECTOR_SUPPORT
+#' ```
+#'
+#' is _not_ defined and we have:
+#'
+#' ```
+#' typedef int R_xlen_t;
+#' define R_XLEN_T_MAX R_LEN_T_MAX
 #' ```
 #'
 #' @section R API:
@@ -44,7 +50,7 @@
 #' @aliases R_len_t R_xlen_t
 #' @aliases R_LEN_T_MAX R_XLEN_T_MAX
 #' @export
-R_len_t <- structure(integer(1L), class = "typedef", min = 0L, max = .Machine[["integer.max"]])
+R_xlen_t <- structure(double(1L), class = "typedef", min = 0L, max = 2^52)
 
 #' @export
-R_xlen_t <- structure(double(1L), class = "typedef", min = 0L, max = 2^52)
+R_len_t <- structure(integer(1L), class = "typedef", min = 0L, max = .Machine[["integer.max"]])
