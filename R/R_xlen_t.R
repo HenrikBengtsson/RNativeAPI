@@ -45,7 +45,7 @@
 #' xlen <- length(x) # numeric; internally R_xlen_t
 #' ```
 #'
-#' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h) and [src/include/Rdefines.h](https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h)
+#' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h)
 #'
 #' @aliases R_len_t R_xlen_t
 #' @aliases R_LEN_T_MAX R_XLEN_T_MAX

@@ -11,7 +11,7 @@
 An object of class \code{typedef} of length 1.
 }
 \source{
-Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h} and \href{https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h}{src/include/Rdefines.h}
+Declaration: \href{https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h}{src/include/Rinternals.h}
 }
 \usage{
 #include <Rinternals.h>
