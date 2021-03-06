@@ -23,7 +23,7 @@ allocVector(type, length)
 \arguments{
 \item{type}{(\link{SEXPTYPE}) An macro constant of length one.}
 
-\item{length}{(R_xlen_t) An non-negative integer.}
+\item{length}{(\link{R_xlen_t}) An non-negative integer.}
 }
 \value{
 \code{allocVector()} returns an \link{SEXP} object of type \link{SEXPTYPE} \code{type}.

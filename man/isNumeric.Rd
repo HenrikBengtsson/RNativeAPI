@@ -31,10 +31,10 @@ Rboolean Rf_isNumeric(SEXP);
 \section{R API}{
 \if{html}{\out{<div class="r">}}\preformatted{library(base)
 
-is.numeric(logical(length = 2L))  ## TRUE
 is.numeric(integer(length = 2L))  ## TRUE
 is.numeric(numeric(length = 2L))  ## TRUE
 is.numeric(factor(c("a", "b")))   ## FALSE
+is.numeric(logical(length = 2L))  ## FALSE but isNumeric() = true!
 }\if{html}{\out{</div>}}
 }
 

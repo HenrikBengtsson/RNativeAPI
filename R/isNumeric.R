@@ -16,10 +16,10 @@
 #' ```r
 #' library(base)
 #'
-#' is.numeric(logical(length = 2L))  ## TRUE
 #' is.numeric(integer(length = 2L))  ## TRUE
 #' is.numeric(numeric(length = 2L))  ## TRUE
 #' is.numeric(factor(c("a", "b")))   ## FALSE
+#' is.numeric(logical(length = 2L))  ## FALSE but isNumeric() = true!
 #' ```
 #'
 #' @source Declaration: [src/include/Rinternals.h](https://github.com/wch/r-source/blob/trunk/src/include/Rinternals.h) and [src/include/Rdefines.h](https://github.com/wch/r-source/blob/trunk/src/include/Rdefines.h)

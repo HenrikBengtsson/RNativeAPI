@@ -2,7 +2,7 @@
 #'
 #' @param type ([SEXPTYPE]) An macro constant of length one.
 #'
-#' @param length (R_xlen_t) An non-negative integer.
+#' @param length ([R_xlen_t]) An non-negative integer.
 #'
 #' @return `allocVector()` returns an [SEXP] object of type [SEXPTYPE] `type`.
 #'
@@ -49,7 +49,7 @@
 #' @export
 allocVector <- function(type, length) {
   type = SEXPTYPE
-  type = "R_xlen_t"
+  type = R_xlen_t
   
   return(SEXP)
 }
