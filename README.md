@@ -12,7 +12,7 @@ _Disclaimer: This is just a proof of concept; I'm not claiming this is the best 
 
 #### HTML version
 
-<img src="getAttrib.png" alt="Screenshot of help(getAttrib)" style="border: 1px solid black; box-shadow: 10px 10px 5px grey; margin: 4ex;">
+<img src="man/figures/getAttrib.png" alt="Screenshot of help(getAttrib)" style="border: 1px solid black; box-shadow: 10px 10px 5px grey; margin: 4ex;">
 
 
 #### Text version
