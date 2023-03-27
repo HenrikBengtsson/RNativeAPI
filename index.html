@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">RNativeAPI</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0-9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.0.0-9000</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -59,115 +55,128 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="r-package-rnativeapi---documentation-and-examples-of-the-r-native-api" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#r-package-rnativeapi---documentation-and-examples-of-the-r-native-api" class="anchor"></a>R package: RNativeAPI - Documentation and Examples of the R Native API</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="r-package-rnativeapi---documentation-and-examples-of-the-r-native-api">R package: RNativeAPI - Documentation and Examples of the R Native API<a class="anchor" aria-label="anchor" href="#r-package-rnativeapi---documentation-and-examples-of-the-r-native-api"></a>
+</h1></div>
 <p>A proof-of-concept package documenting the R Native API via the built-in R help system. The help pages are written in Roxygen2 that are compiled to Rd format and then rendered by R as regular help pages.</p>
 <p><em>Disclaimer: This is just a proof of concept; I’m not claiming this is the best approach.</em></p>
-<div id="examples" class="section level2">
-<h2 class="hasAnchor">
-<a href="#examples" class="anchor"></a>Examples</h2>
-<div id="help-pages" class="section level3">
-<h3 class="hasAnchor">
-<a href="#help-pages" class="anchor"></a>Help pages</h3>
-<div id="html-version" class="section level4">
-<h4 class="hasAnchor">
-<a href="#html-version" class="anchor"></a>HTML version</h4>
+<div class="section level2">
+<h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
+</h2>
+<div class="section level3">
+<h3 id="help-pages">Help pages<a class="anchor" aria-label="anchor" href="#help-pages"></a>
+</h3>
+<div class="section level4">
+<h4 id="html-version">HTML version<a class="anchor" aria-label="anchor" href="#html-version"></a>
+</h4>
 <p><img src="reference/figures/getAttrib.png" alt="Screenshot of help(getAttrib)" style="border: 1px solid black; box-shadow: 10px 10px 5px grey; margin: 4ex;"></p>
 </div>
-<div id="text-version" class="section level4">
-<h4 class="hasAnchor">
-<a href="#text-version" class="anchor"></a>Text version</h4>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span><span class="kw">options</span>(<span class="dt">help_type =</span> <span class="st">"text"</span>)
-<span class="op">&gt;</span><span class="st"> </span>?RNativeAPI<span class="op">::</span>getAttrib
-
-getAttrib              package<span class="op">:</span>RNativeAPI              R Documentation
-
-Gets and Sets an Attribute of an R Object
-
-Description<span class="op">:</span>
-
-<span class="st">     </span>Gets and Sets an Attribute of an R Object
-
-Usage<span class="op">:</span>
-
-<span class="st">     </span><span class="kw">getAttrib</span>(vec, name)
-     
-     <span class="kw">setAttrib</span>(vec, name, val)
-     
-Arguments<span class="op">:</span>
-
-<span class="st">     </span>vec<span class="op">:</span><span class="st"> </span>(SEXP) An R object.
-
-    name<span class="op">:</span><span class="st"> </span>(SEXP) A character of length one.
-
-     val<span class="op">:</span><span class="st"> </span>(SEXP) An R object.
-
-Value<span class="op">:</span>
-
-<span class="st">     </span><span class="kw">getAttrib</span>() <span class="kw">returns</span> (SEXP) the value of attribute ‘name’.
-
-     <span class="kw">setAttrib</span>() <span class="kw">returns</span> (SEXP) a copy of R object ‘vec’ with attribute ‘name’ set.
-
-C API<span class="op">:</span>
-
-<span class="st">     </span>SEXP <span class="kw">getAttrib</span>(SEXP vec, SEXP name)
-     SEXP <span class="kw">setAttrib</span>(SEXP vec, SEXP name, SEXP val)
-
-R API<span class="op">:</span>
-
-<span class="st">     </span>value &lt;-<span class="st"> </span><span class="kw">attr</span>(vec, name)
-     <span class="kw">attr</span>(vec, name) &lt;-<span class="st"> </span>val
-
-Source<span class="op">:</span>
-
-<span class="st">     </span>Declaration<span class="op">:</span><span class="st"> </span>src<span class="op">/</span>include<span class="op">/</span>Rinternals.h
-
-     Implementation<span class="op">:</span><span class="st"> </span>src<span class="op">/</span>main<span class="op">/</span>attrib.c</code></pre></div>
+<div class="section level4">
+<h4 id="text-version">Text version<a class="anchor" aria-label="anchor" href="#text-version"></a>
+</h4>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">options</span>(<span class="at">help_type =</span> <span class="st">"text"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="sc">&gt;</span> ?RNativeAPI<span class="sc">::</span>getAttrib</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>getAttrib              package<span class="sc">:</span>RNativeAPI              R Documentation</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>Gets and Sets an Attribute of an R Object</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>Description<span class="sc">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>     Gets and Sets an Attribute of an R Object</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>Usage<span class="sc">:</span></span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>     <span class="fu">getAttrib</span>(vec, name)</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>     </span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>     <span class="fu">setAttrib</span>(vec, name, val)</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>     </span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a>Arguments<span class="sc">:</span></span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a>     vec<span class="sc">:</span> (SEXP) An R object.</span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a>    name<span class="sc">:</span> (SEXP) A character of length one.</span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a>     val<span class="sc">:</span> (SEXP) An R object.</span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a>Value<span class="sc">:</span></span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a>     <span class="fu">getAttrib</span>() <span class="fu">returns</span> (SEXP) the value of attribute ‘name’.</span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>     <span class="fu">setAttrib</span>() <span class="fu">returns</span> (SEXP) a copy of R object ‘vec’ with attribute ‘name’ set.</span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a>C API<span class="sc">:</span></span>
+<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a>     SEXP <span class="fu">getAttrib</span>(SEXP vec, SEXP name)</span>
+<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a>     SEXP <span class="fu">setAttrib</span>(SEXP vec, SEXP name, SEXP val)</span>
+<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a>R API<span class="sc">:</span></span>
+<span id="cb1-38"><a href="#cb1-38" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" tabindex="-1"></a>     value <span class="ot">&lt;-</span> <span class="fu">attr</span>(vec, name)</span>
+<span id="cb1-40"><a href="#cb1-40" tabindex="-1"></a>     <span class="fu">attr</span>(vec, name) <span class="ot">&lt;-</span> val</span>
+<span id="cb1-41"><a href="#cb1-41" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" tabindex="-1"></a>Source<span class="sc">:</span></span>
+<span id="cb1-43"><a href="#cb1-43" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" tabindex="-1"></a>     Declaration<span class="sc">:</span> src<span class="sc">/</span>include<span class="sc">/</span>Rinternals.h</span>
+<span id="cb1-45"><a href="#cb1-45" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" tabindex="-1"></a>     Implementation<span class="sc">:</span> src<span class="sc">/</span>main<span class="sc">/</span>attrib.c</span></code></pre></div>
 </div>
 </div>
 </div>
-<div id="displaying-functions" class="section level2">
-<h2 class="hasAnchor">
-<a href="#displaying-functions" class="anchor"></a>Displaying functions</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="op">&gt;</span><span class="st"> </span>RNativeAPI<span class="op">::</span>getAttrib
-<span class="cf">function</span> (vec, name) 
-{
-    vec =<span class="st"> </span>SEXP
-    name =<span class="st"> </span>SEXP
-    <span class="kw">return</span>(SEXP)
-}
-<span class="op">&lt;</span>bytecode<span class="op">:</span><span class="st"> </span><span class="dv">0x561c1cd594c0</span><span class="op">&gt;</span>
-<span class="er">&lt;</span>environment<span class="op">:</span><span class="st"> </span>namespace<span class="op">:</span>RNativeAPI<span class="op">&gt;</span></code></pre></div>
-<p><em>Comment:</em> By a customized class and <code><a href="https://rdrr.io/r/base/print.html">print()</a></code> method, the above can probably be presented much nice. With some efforts, it could even display the actual source code (there are already R packages providing functionalities for this).</p>
+<div class="section level2">
+<h2 id="displaying-functions">Displaying functions<a class="anchor" aria-label="anchor" href="#displaying-functions"></a>
+</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="sc">&gt;</span> RNativeAPI<span class="sc">::</span>getAttrib</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="cf">function</span> (vec, name) </span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>{</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>    vec <span class="ot">=</span> SEXP</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>    name <span class="ot">=</span> SEXP</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>    <span class="fu">return</span>(SEXP)</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>}</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="sc">&lt;</span>bytecode<span class="sc">:</span> <span class="dv">0x561c1cd594c0</span><span class="sc">&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="er">&lt;</span>environment<span class="sc">:</span> namespace<span class="sc">:</span>RNativeAPI<span class="sc">&gt;</span></span></code></pre></div>
+<p><em>Comment:</em> By a customized class and <code><a href="https://rdrr.io/r/base/print.html" class="external-link">print()</a></code> method, the above can probably be presented much nice. With some efforts, it could even display the actual source code (there are already R packages providing functionalities for this).</p>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>GPL (&gt;= 3)</li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing RNativeAPI</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Henrik Bengtsson <br><small class="roles"> Author, maintainer, copyright holder </small>  </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Henrik Bengtsson.</p>
+  <p></p>
+<p>Developed by Henrik Bengtsson.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7</p> and <a href="https://github.com/HenrikBengtsson/pkgdown.extras/">pkgdown.extras</a> 0.0.0.9005.</p>
 </div>
 
       </footer>
@@ -175,6 +184,8 @@ Source<span class="op">:</span>
 
   
 
+
+  
 
   </body>
 </html>
