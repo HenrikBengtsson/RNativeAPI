@@ -62,16 +62,16 @@
     
 
 <p>Long vectors:</p>
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="kw">typedef</span> <span class="dt">ptrdiff_t</span> R_xlen_t<span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>define R_XLEN_T_MAX <span class="dv">4503599627370496</span></span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="dt">ptrdiff_t</span> R_xlen_t<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>define R_XLEN_T_MAX <span class="dv">4503599627370496</span></span></code></pre><p></p></div>
 <p>Short vectors:</p>
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="kw">typedef</span> <span class="dt">int</span> R_len_t<span class="op">;</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="pp">#define R_LEN_T_MAX INT_MAX</span></span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">typedef</span> <span class="dt">int</span> R_len_t<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define R_LEN_T_MAX INT_MAX</span></span></code></pre><p></p></div>
 <p>If long vectors are <em>not</em> supported on the current platform, then:</p>
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>LONG_VECTOR_SUPPORT</span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>LONG_VECTOR_SUPPORT</span></code></pre><p></p></div>
 <p>is <em>not</em> defined and we have:</p>
-<p></p><div class="sourceCode"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>typedef int R_xlen_t;</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>define R_XLEN_T_MAX R_LEN_T_MAX</span></code></pre><p></p></div>
+<p></p><div class="sourceCode"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>typedef int R_xlen_t;</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>define R_XLEN_T_MAX R_LEN_T_MAX</span></code></pre><p></p></div>
     </div>
     <div id="r-api">
     <h2>R API</h2>
@@ -101,7 +101,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7</p> and <a href="https://github.com/HenrikBengtsson/pkgdown.extras/">pkgdown.extras</a> 0.0.0.9005.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

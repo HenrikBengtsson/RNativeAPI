@@ -75,19 +75,19 @@
     
 
 
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Rinternals.h&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>SEXP     Rf_allocVector<span class="op">(</span>SEXPTYPE<span class="op">,</span> R_xlen_t<span class="op">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="pp">#define allocVector     </span>Rf_allocVector</span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Rinternals.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>SEXP     Rf_allocVector<span class="op">(</span>SEXPTYPE<span class="op">,</span> R_xlen_t<span class="op">)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define allocVector     Rf_allocVector</span></span></code></pre><p></p></div>
 <p>Related macros:</p>
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Rdefines.h&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="pp">#define NEW_LOGICAL</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">      </span>Rf_allocVector<span class="op">(</span>LGLSXP<span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="pp">#define NEW_INTEGER</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">      </span>Rf_allocVector<span class="op">(</span><span class="pp">INTSXP</span><span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="pp">#define NEW_NUMERIC</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">      </span>Rf_allocVector<span class="op">(</span>REALSXP<span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="pp">#define NEW_CHARACTER</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">    </span>Rf_allocVector<span class="op">(</span><span class="pp">STRSXP</span><span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="pp">#define NEW_COMPLEX</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">      </span>Rf_allocVector<span class="op">(</span><span class="pp">CPLXSXP</span><span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="pp">#define NEW_LIST</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">     </span>Rf_allocVector<span class="op">(</span><span class="pp">VECSXP</span><span class="op">,</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="pp">#define NEW_STRING</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">       NEW_CHARACTER</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span></span>
-<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="pp">#define NEW_RAW</span><span class="op">(</span><span class="pp">n</span><span class="op">)</span><span class="pp">      </span>Rf_allocVector<span class="op">(</span>RAWSXP<span class="op">,</span><span class="pp">n</span><span class="op">)</span></span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Rdefines.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_LOGICAL(n)      Rf_allocVector(LGLSXP,n)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_INTEGER(n)      Rf_allocVector(INTSXP,n)</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_NUMERIC(n)      Rf_allocVector(REALSXP,n)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_CHARACTER(n)    Rf_allocVector(STRSXP,n)</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_COMPLEX(n)      Rf_allocVector(CPLXSXP,n)</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_LIST(n)     Rf_allocVector(VECSXP,n)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_STRING(n)       NEW_CHARACTER(n)</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="pp">#define NEW_RAW(n)      Rf_allocVector(RAWSXP,n)</span></span></code></pre><p></p></div>
     </div>
     <div id="r-api">
     <h2>R API</h2>
@@ -117,7 +117,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7</p> and <a href="https://github.com/HenrikBengtsson/pkgdown.extras/">pkgdown.extras</a> 0.0.0.9005.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

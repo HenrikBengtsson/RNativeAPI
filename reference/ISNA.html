@@ -73,27 +73,27 @@
     
 
 
-<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a> <span class="pp">#include </span><span class="im">&lt;R.h&gt;</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a> </span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a> <span class="dt">int</span> R_IsNA<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a> <span class="dt">int</span> R_IsNaN<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a> <span class="dt">int</span> R_finite<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a> </span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a> <span class="pp">#define ISNA</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span><span class="pp">           </span>R_IsNA<span class="op">(</span><span class="pp">x</span><span class="op">)</span></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a> </span>
-<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a> <span class="pp">#ifdef __cplusplus</span></span>
-<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>   <span class="dt">int</span> R_isnancpp<span class="op">(</span><span class="dt">double</span><span class="op">);</span> <span class="co">/* in arithmetic.c */</span></span>
-<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a> <span class="pp">#  define ISNAN</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span><span class="pp">     </span>R_isnancpp<span class="op">(</span><span class="pp">x</span><span class="op">)</span></span>
-<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a> <span class="pp">#else</span></span>
-<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a> <span class="pp">#  define ISNAN</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span><span class="pp">     </span><span class="op">(</span><span class="pp">isnan</span><span class="op">(</span><span class="pp">x</span><span class="op">)!=</span><span class="dv">0</span><span class="op">)</span></span>
-<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a> <span class="pp">#endif</span></span>
-<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a> </span>
-<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a> <span class="pp">#ifdef HAVE_WORKING_ISFINITE</span></span>
-<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a> <span class="co">/* isfinite is defined in &lt;math.h&gt; according to C99 */</span></span>
-<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a> <span class="pp"># define R_FINITE</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span><span class="pp">    isfinite</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span></span>
-<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a> <span class="pp">#else</span></span>
-<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a> <span class="pp"># define R_FINITE</span><span class="op">(</span><span class="pp">x</span><span class="op">)</span><span class="pp">    </span>R_finite<span class="op">(</span><span class="pp">x</span><span class="op">)</span></span>
-<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a> <span class="pp">#endif</span></span></code></pre><p></p></div>
+<p></p><div class="sourceCode c"><pre><code><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a> <span class="pp">#include </span><span class="im">&lt;R.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a> <span class="dt">int</span> R_IsNA<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a> <span class="dt">int</span> R_IsNaN<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a> <span class="dt">int</span> R_finite<span class="op">(</span><span class="dt">double</span><span class="op">);</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a> <span class="pp">#define ISNA(x)           R_IsNA(x)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a> <span class="pp">#ifdef __cplusplus</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>   <span class="dt">int</span> R_isnancpp<span class="op">(</span><span class="dt">double</span><span class="op">);</span> <span class="co">/* in arithmetic.c */</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a> <span class="pp">#  define ISNAN(x)     R_isnancpp(x)</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a> <span class="pp">#else</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a> <span class="pp">#  define ISNAN(x)     (isnan(x)!=0)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a> <span class="pp">#endif</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a> <span class="pp">#ifdef HAVE_WORKING_ISFINITE</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a> <span class="co">/* isfinite is defined in &lt;math.h&gt; according to C99 */</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a> <span class="pp"># define R_FINITE(x)    isfinite(x)</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a> <span class="pp">#else</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a> <span class="pp"># define R_FINITE(x)    R_finite(x)</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a> <span class="pp">#endif</span></span></code></pre><p></p></div>
     </div>
     <div id="r-api">
     <h2>R API</h2>
@@ -121,7 +121,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7</p> and <a href="https://github.com/HenrikBengtsson/pkgdown.extras/">pkgdown.extras</a> 0.0.0.9005.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
