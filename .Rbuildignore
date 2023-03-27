@@ -3,3 +3,7 @@
 ^([.]travis|appveyor)[.]yml$
 ^.*[.]png$
 ^.local
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
