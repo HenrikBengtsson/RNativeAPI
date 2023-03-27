@@ -38,7 +38,9 @@ SEXPTYPE
 The \code{SEXPTYPE} Structure
 }
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rinternals.h>
 }\if{html}{\out{</div>}}
 }
 

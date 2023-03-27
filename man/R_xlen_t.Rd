@@ -23,24 +23,34 @@ Type Definition: 'R_xlen_t' and 'R_len_t'
 }
 \section{C API}{
 
-Long vectors:\if{html}{\out{<div class="c">}}\preformatted{typedef ptrdiff_t R_xlen_t;
+Long vectors:
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{typedef ptrdiff_t R_xlen_t;
 define R_XLEN_T_MAX 4503599627370496
 }\if{html}{\out{</div>}}
 
-Short vectors:\if{html}{\out{<div class="c">}}\preformatted{typedef int R_len_t;
+Short vectors:
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{typedef int R_len_t;
 #define R_LEN_T_MAX INT_MAX
 }\if{html}{\out{</div>}}
 
-If long vectors are \emph{not} supported on the current platform, then:\if{html}{\out{<div class="c">}}\preformatted{LONG_VECTOR_SUPPORT
+If long vectors are \emph{not} supported on the current platform, then:
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{LONG_VECTOR_SUPPORT
 }\if{html}{\out{</div>}}
 
-is \emph{not} defined and we have:\preformatted{typedef int R_xlen_t;
+is \emph{not} defined and we have:
+
+\if{html}{\out{<div class="sourceCode">}}\preformatted{typedef int R_xlen_t;
 define R_XLEN_T_MAX R_LEN_T_MAX
-}
+}\if{html}{\out{</div>}}
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 # Maximum length of a "short" vector ...
 x <- seq_len(.Machine$integer.max)

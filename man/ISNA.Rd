@@ -41,7 +41,9 @@ Checks if a Value is NA, NaN, or Finite
 }
 
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{ #include <R.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{ #include <R.h>
  
  int R_IsNA(double);
  int R_IsNaN(double);
@@ -66,7 +68,9 @@ Checks if a Value is NA, NaN, or Finite
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 x <- c(NA_real_, NaN, 3.14, -Inf, +Inf)
 is.na(x)        # c( TRUE,  TRUE, FALSE, FALSE, FALSE)

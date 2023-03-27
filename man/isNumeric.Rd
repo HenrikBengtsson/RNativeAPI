@@ -22,14 +22,18 @@ isNumeric(s)
 Checks if an SEXP is of Certain Type
 }
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rinternals.h>
 Rboolean Rf_isNumeric(SEXP);
 #define isNumeric		Rf_isNumeric
 }\if{html}{\out{</div>}}
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 is.numeric(integer(length = 2L))  ## TRUE
 is.numeric(numeric(length = 2L))  ## TRUE

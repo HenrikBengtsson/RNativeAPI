@@ -32,12 +32,16 @@ allocVector(type, length)
 Allocates a Vector
 }
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rinternals.h>
 SEXP     Rf_allocVector(SEXPTYPE, R_xlen_t)
 #define allocVector		Rf_allocVector
 }\if{html}{\out{</div>}}
 
-Related macros:\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.h>
+Related macros:
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rdefines.h>
 #define NEW_LOGICAL(n)		Rf_allocVector(LGLSXP,n)
 #define NEW_INTEGER(n)		Rf_allocVector(INTSXP,n)
 #define NEW_NUMERIC(n)		Rf_allocVector(REALSXP,n)
@@ -50,7 +54,9 @@ Related macros:\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 x_logical   <- logical(length = n)
 x_integer   <- integer(length = n)

@@ -32,7 +32,9 @@ setAttrib(vec, name, val)
 Gets and Sets an Attribute of an R Object
 }
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rinternals.h>
 
 SEXP getAttrib(SEXP vec, SEXP name)
 SEXP setAttrib(SEXP vec, SEXP name, SEXP val)
@@ -40,7 +42,9 @@ SEXP setAttrib(SEXP vec, SEXP name, SEXP val)
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 value <- attr(vec, name, exact = TRUE)
 attr(vec, name) <- val

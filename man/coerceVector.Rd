@@ -32,12 +32,16 @@ coerceVector(v, type)
 Coerces a Vector
 }
 \section{C API}{
-\if{html}{\out{<div class="c">}}\preformatted{#include <Rinternals.h>
+
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rinternals.h>
 SEXP Rf_coerceVector(SEXP, SEXPTYPE)
 #define coerceVector		Rf_coerceVector
 }\if{html}{\out{</div>}}
 
-Related macros:\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.h>
+Related macros:
+
+\if{html}{\out{<div class="sourceCode c">}}\preformatted{#include <Rdefines.h>
 #define AS_LOGICAL(x)		Rf_coerceVector(x,LGLSXP)
 #define AS_INTEGER(x)		Rf_coerceVector(x,INTSXP)
 #define AS_NUMERIC(x)		Rf_coerceVector(x,REALSXP)
@@ -50,7 +54,9 @@ Related macros:\if{html}{\out{<div class="c">}}\preformatted{#include <Rdefines.
 }
 
 \section{R API}{
-\if{html}{\out{<div class="r">}}\preformatted{library(base)
+
+
+\if{html}{\out{<div class="sourceCode r">}}\preformatted{library(base)
 
 x <- 1:5
 y_integer   <- as.integer(x)
